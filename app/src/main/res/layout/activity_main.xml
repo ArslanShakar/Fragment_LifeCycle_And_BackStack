@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:stretchColumns="*"
+        >
+
+        <TableRow>
+
+        <Button
+            android:layout_height="35dp"
+            android:onClick="addA"
+            android:text="Add A"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_height="35dp"
+            android:onClick="btAdd_B"
+            android:text="Add B"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_height="35dp"
+            android:onClick="Remove_A"
+            android:text="Remove A"
+            android:textAllCaps="false" />
+
+
+
+
+    </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_height="35dp"
+                android:onClick="ReplaceAWithB"
+                android:text="A Replace by B"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_height="35dp"
+                android:onClick="ReplaceBWithA"
+                android:text="B Replace by A"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_height="35dp"
+                android:onClick="attach_A"
+                android:text="Attach A"
+                android:textAllCaps="false" />
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:layout_height="35dp"
+                android:onClick="detachA"
+                android:text="Detach A"
+                android:textAllCaps="false" />
+
+            <Button
+
+                android:layout_height="35dp"
+                android:onClick="PopAddA"
+                android:text="PoP Add A"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_height="35dp"
+                android:onClick="PopAddAInclusive"
+                android:text="PoP Add A Inclusive"
+                android:textAllCaps="false" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_height="35dp"
+                android:onClick="back"
+                android:text="Back"
+                android:textAllCaps="false" />
+            <Button
+                android:layout_height="35dp"
+                android:onClick="hideA"
+                android:text="Hide A"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_height="35dp"
+                android:onClick="showA"
+                android:text="Show A"
+                android:textAllCaps="false" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_height="35dp"
+                android:onClick="btRemove_B"
+                android:text="Remove B"
+                android:textAllCaps="false" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="50"
+                android:id="@+id/container"
+                android:background="#FFF"
+                android:layout_marginBottom="20dp"
+                />
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="50"
+            android:background="#e1e1e1"
+            >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="..."
+                android:id="@+id/tvData"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                />
+        </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
